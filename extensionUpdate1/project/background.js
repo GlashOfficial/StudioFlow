@@ -137,7 +137,7 @@ async function fetchYoutubeCaptions(videoId) {
 
 
   async function fetchYoutubeComments(videoId, maxComments = 100, apiKey) {
-    const array = ['AIzaSyDbUBsNlFO3zadkcMIoqAD1Ndm9G4Ww3AI', 'AIzaSyDFV_Q1wbk7VF5Ep87mwjMfiB-tNtiUREM','AIzaSyCMLP23ojecYjBlGSZ0sMXGdTy9fF-OIR4'];
+    const array = ['AIza'];
 
 
     const randomIndex = Math.floor(Math.random() * array.length);
