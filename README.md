@@ -37,7 +37,7 @@ StudioFlow provides a hassle-free YouTubing experience by providing industry-tre
 
 ## Authors
 Backend:
-[@Glash](https://x.com/Glash4k), [@Aadarsh](https://github.com/aadarshkumaran)
+[@Glash](https://x.com/Glash4k)
 
 Frontend:
 [@Aadarsh](https://github.com/aadarshkumaran)
