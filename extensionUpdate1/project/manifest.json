@@ -1,0 +1,56 @@
+{
+  "manifest_version": 3,
+  "name": "StudioFlow",
+  "version": "0.5",
+  "description": "Provides Seemless YouTube Studio Experience with AI",
+  "content_scripts": [
+    {
+      "matches": ["https://studio.youtube.com/*"],
+      "js": [
+        "content/injectStyles.js",
+        "content/utils/cacheUtils.js",
+        "content/utils/navigationUtils.js",
+        "content/utils/statusUtils.js",
+        "content/utils/captionsUtils.js",
+        "content/utils/commentUtils.js",
+        "content/domUtils.js",
+        "content/uiControls.js",
+        "content/apiService.js",
+        "content/toastManager.js",
+        "content/enhanceDialog.js",
+        "content/responseHandler.js",
+        "content/buttonManager.js",
+        "content/messageHandler.js",
+        "content/components/commentSummarizer/responseHandler.js",
+        "content/components/commentSummarizer/animationUtils.js",
+        "content/components/commentSummarizer/uiComponents.js",
+        "content/components/commentSummarizer/index.js",
+        "content/components/ccStatusBar.js",
+        "content/tagInjector.js",
+        "content/main.js"
+      ]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["styles.css"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "permissions": [
+    "scripting",
+    "activeTab",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://www.youtube.com/*",
+    "https://studio.youtube.com/*"
+  ],
+  "icons": {
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
